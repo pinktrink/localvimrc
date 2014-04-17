@@ -1,6 +1,6 @@
 autocmd BufReadPost * call LoadLocalVimrc()
 
-function LoadLocalVimrc()
+function! LoadLocalVimrc()
     " Find and source .lvimrc files from the root to the current directory
     let l:mydir=split(getcwd(), '/')
     let l:rootDist=len(mydir)
